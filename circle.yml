@@ -4,9 +4,11 @@ machine:
     version: 5
   php:
     version: 7.0.4
-test:
+dependencies:
   post:
     - php pagekit build
+test:
+  post:
     - mv pagekit-*.zip $CIRCLE_ARTIFACTS
 dependencies:
   cache_directories:
