@@ -13,3 +13,10 @@ dependencies:
 test:
   post:
     - mv pagekit-*.zip $CIRCLE_ARTIFACTS
+deployment:
+  release:
+    tag: /[0-9]+(\.[0-9]+)*/
+    owner: MalteScharenberg
+    commands:
+      - ghr --username MalteScharenberg --token $GITHUB_TOKEN --replace $CIRCLE_TAG $CIRCLE_ARTIFACTS
+
