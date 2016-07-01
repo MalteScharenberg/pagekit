@@ -1,17 +1,14 @@
-
 machine:
   node:
     version: 5
   php:
     version: 7.0.4
 dependencies:
+  cache_directories:
+    - "app/vendor"
+    - "packages"
   post:
     - php pagekit build
 test:
   post:
     - mv pagekit-*.zip $CIRCLE_ARTIFACTS
-dependencies:
-  cache_directories:
-    - "app/vendor"
-    - "packages"
-
