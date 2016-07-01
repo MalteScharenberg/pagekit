@@ -14,7 +14,7 @@ test:
   post:
     - mv pagekit-*.zip $CIRCLE_ARTIFACTS
 deployment:
-  release:
+  master:
     tag: /[0-9]+(\.[0-9]+)*/
     owner: MalteScharenberg
     commands:
