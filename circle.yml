@@ -1,6 +1,6 @@
 machine:
   node:
-    version: 5
+    version: v4.3.0
   php:
     version: 7.0.4
 dependencies:
