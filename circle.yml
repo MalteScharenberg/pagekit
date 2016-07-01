@@ -9,6 +9,7 @@ dependencies:
     - "packages"
   post:
     - php pagekit build
+    - go get github.com/tcnksm/ghr
 test:
   post:
     - mv pagekit-*.zip $CIRCLE_ARTIFACTS
