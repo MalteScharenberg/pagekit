@@ -8,3 +8,8 @@ test:
   post:
     - php pagekit build
     - mv pagekit-*.zip $CIRCLE_ARTIFACTS
+dependencies:
+  cache_directories:
+    - "app/vendor"
+    - "packages"
+
