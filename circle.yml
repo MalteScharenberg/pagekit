@@ -7,5 +7,4 @@ machine:
 test:
   post:
     - php pagekit build
-    - mkdir $CIRCLE_ARTIFACTS
     - mv pagekit-*.zip $CIRCLE_ARTIFACTS
